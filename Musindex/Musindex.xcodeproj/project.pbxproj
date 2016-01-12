@@ -18,6 +18,7 @@
 		DD2D428A1C447A5600E27BBC /* appIcon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2D42891C447A5600E27BBC /* appIcon60@2x.png */; };
 		DD2D428D1C447B0800E27BBC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D428C1C447B0800E27BBC /* SearchViewController.m */; };
 		DD2D42931C447FB400E27BBC /* ItunesService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42921C447FB400E27BBC /* ItunesService.m */; };
+		DD2D42961C45130600E27BBC /* ItunesResultItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42951C45130600E27BBC /* ItunesResultItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		DD2D428C1C447B0800E27BBC /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		DD2D42911C447FB400E27BBC /* ItunesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItunesService.h; sourceTree = "<group>"; };
 		DD2D42921C447FB400E27BBC /* ItunesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesService.m; sourceTree = "<group>"; };
+		DD2D42941C45130600E27BBC /* ItunesResultItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItunesResultItem.h; sourceTree = "<group>"; };
+		DD2D42951C45130600E27BBC /* ItunesResultItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesResultItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 		DD2D42881C4478FC00E27BBC /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D42941C45130600E27BBC /* ItunesResultItem.h */,
+				DD2D42951C45130600E27BBC /* ItunesResultItem.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				DD2D428D1C447B0800E27BBC /* SearchViewController.m in Sources */,
 				DD2D42521C44776000E27BBC /* main.m in Sources */,
 				DD2D42931C447FB400E27BBC /* ItunesService.m in Sources */,
+				DD2D42961C45130600E27BBC /* ItunesResultItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

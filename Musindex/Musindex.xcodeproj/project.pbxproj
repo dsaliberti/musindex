@@ -16,6 +16,8 @@
 		DD2D426B1C44776000E27BBC /* MusindexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D426A1C44776000E27BBC /* MusindexTests.m */; };
 		DD2D42761C44776000E27BBC /* MusindexUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42751C44776000E27BBC /* MusindexUITests.m */; };
 		DD2D428A1C447A5600E27BBC /* appIcon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2D42891C447A5600E27BBC /* appIcon60@2x.png */; };
+		DD2D428D1C447B0800E27BBC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D428C1C447B0800E27BBC /* SearchViewController.m */; };
+		DD2D42931C447FB400E27BBC /* ItunesService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42921C447FB400E27BBC /* ItunesService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		DD2D42751C44776000E27BBC /* MusindexUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusindexUITests.m; sourceTree = "<group>"; };
 		DD2D42771C44776000E27BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2D42891C447A5600E27BBC /* appIcon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon60@2x.png"; sourceTree = "<group>"; };
+		DD2D428B1C447B0800E27BBC /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		DD2D428C1C447B0800E27BBC /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		DD2D42911C447FB400E27BBC /* ItunesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItunesService.h; sourceTree = "<group>"; };
+		DD2D42921C447FB400E27BBC /* ItunesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +109,11 @@
 		DD2D424F1C44776000E27BBC /* Musindex */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D42901C447ECC00E27BBC /* service */,
 				DD2D42881C4478FC00E27BBC /* model */,
 				DD2D42871C4478DA00E27BBC /* view */,
-				DD2D42531C44776000E27BBC /* AppDelegate.h */,
-				DD2D42541C44776000E27BBC /* AppDelegate.m */,
-				DD2D42561C44776000E27BBC /* ViewController.h */,
-				DD2D42571C44776000E27BBC /* ViewController.m */,
+				DD2D428E1C447B2C00E27BBC /* viewcontrollers */,
+				DD2D428F1C447B5200E27BBC /* app */,
 				DD2D42501C44776000E27BBC /* Supporting Files */,
 			);
 			path = Musindex;
@@ -157,6 +162,35 @@
 			children = (
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		DD2D428E1C447B2C00E27BBC /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D42561C44776000E27BBC /* ViewController.h */,
+				DD2D42571C44776000E27BBC /* ViewController.m */,
+				DD2D428B1C447B0800E27BBC /* SearchViewController.h */,
+				DD2D428C1C447B0800E27BBC /* SearchViewController.m */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		DD2D428F1C447B5200E27BBC /* app */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D42531C44776000E27BBC /* AppDelegate.h */,
+				DD2D42541C44776000E27BBC /* AppDelegate.m */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		DD2D42901C447ECC00E27BBC /* service */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D42911C447FB400E27BBC /* ItunesService.h */,
+				DD2D42921C447FB400E27BBC /* ItunesService.m */,
+			);
+			name = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +326,9 @@
 			files = (
 				DD2D42581C44776000E27BBC /* ViewController.m in Sources */,
 				DD2D42551C44776000E27BBC /* AppDelegate.m in Sources */,
+				DD2D428D1C447B0800E27BBC /* SearchViewController.m in Sources */,
 				DD2D42521C44776000E27BBC /* main.m in Sources */,
+				DD2D42931C447FB400E27BBC /* ItunesService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

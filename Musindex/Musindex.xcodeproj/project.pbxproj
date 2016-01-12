@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD2D42521C44776000E27BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42511C44776000E27BBC /* main.m */; };
+		DD2D42551C44776000E27BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42541C44776000E27BBC /* AppDelegate.m */; };
+		DD2D42581C44776000E27BBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42571C44776000E27BBC /* ViewController.m */; };
+		DD2D425B1C44776000E27BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2D42591C44776000E27BBC /* Main.storyboard */; };
+		DD2D425D1C44776000E27BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D425C1C44776000E27BBC /* Assets.xcassets */; };
+		DD2D42601C44776000E27BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2D425E1C44776000E27BBC /* LaunchScreen.storyboard */; };
+		DD2D426B1C44776000E27BBC /* MusindexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D426A1C44776000E27BBC /* MusindexTests.m */; };
+		DD2D42761C44776000E27BBC /* MusindexUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42751C44776000E27BBC /* MusindexUITests.m */; };
+		DD2D428A1C447A5600E27BBC /* appIcon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2D42891C447A5600E27BBC /* appIcon60@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD2D42671C44776000E27BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD2D42451C44776000E27BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD2D424C1C44776000E27BBC;
+			remoteInfo = Musindex;
+		};
+		DD2D42721C44776000E27BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD2D42451C44776000E27BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD2D424C1C44776000E27BBC;
+			remoteInfo = Musindex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD2D424D1C44776000E27BBC /* Musindex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musindex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2D42511C44776000E27BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD2D42531C44776000E27BBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD2D42541C44776000E27BBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD2D42561C44776000E27BBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD2D42571C44776000E27BBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD2D425A1C44776000E27BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD2D425C1C44776000E27BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD2D425F1C44776000E27BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD2D42611C44776000E27BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2D42661C44776000E27BBC /* MusindexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusindexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2D426A1C44776000E27BBC /* MusindexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusindexTests.m; sourceTree = "<group>"; };
+		DD2D426C1C44776000E27BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2D42711C44776000E27BBC /* MusindexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusindexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2D42751C44776000E27BBC /* MusindexUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusindexUITests.m; sourceTree = "<group>"; };
+		DD2D42771C44776000E27BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2D42891C447A5600E27BBC /* appIcon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon60@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD2D424A1C44776000E27BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2D42631C44776000E27BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2D426E1C44776000E27BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD2D42441C44776000E27BBC = {
+			isa = PBXGroup;
+			children = (
+				DD2D424F1C44776000E27BBC /* Musindex */,
+				DD2D42691C44776000E27BBC /* MusindexTests */,
+				DD2D42741C44776000E27BBC /* MusindexUITests */,
+				DD2D424E1C44776000E27BBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD2D424E1C44776000E27BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D424D1C44776000E27BBC /* Musindex.app */,
+				DD2D42661C44776000E27BBC /* MusindexTests.xctest */,
+				DD2D42711C44776000E27BBC /* MusindexUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD2D424F1C44776000E27BBC /* Musindex */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D42881C4478FC00E27BBC /* model */,
+				DD2D42871C4478DA00E27BBC /* view */,
+				DD2D42531C44776000E27BBC /* AppDelegate.h */,
+				DD2D42541C44776000E27BBC /* AppDelegate.m */,
+				DD2D42561C44776000E27BBC /* ViewController.h */,
+				DD2D42571C44776000E27BBC /* ViewController.m */,
+				DD2D42501C44776000E27BBC /* Supporting Files */,
+			);
+			path = Musindex;
+			sourceTree = "<group>";
+		};
+		DD2D42501C44776000E27BBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D42611C44776000E27BBC /* Info.plist */,
+				DD2D42511C44776000E27BBC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD2D42691C44776000E27BBC /* MusindexTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D426A1C44776000E27BBC /* MusindexTests.m */,
+				DD2D426C1C44776000E27BBC /* Info.plist */,
+			);
+			path = MusindexTests;
+			sourceTree = "<group>";
+		};
+		DD2D42741C44776000E27BBC /* MusindexUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D42751C44776000E27BBC /* MusindexUITests.m */,
+				DD2D42771C44776000E27BBC /* Info.plist */,
+			);
+			path = MusindexUITests;
+			sourceTree = "<group>";
+		};
+		DD2D42871C4478DA00E27BBC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D42891C447A5600E27BBC /* appIcon60@2x.png */,
+				DD2D42591C44776000E27BBC /* Main.storyboard */,
+				DD2D425E1C44776000E27BBC /* LaunchScreen.storyboard */,
+				DD2D425C1C44776000E27BBC /* Assets.xcassets */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		DD2D42881C4478FC00E27BBC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD2D424C1C44776000E27BBC /* Musindex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2D427A1C44776000E27BBC /* Build configuration list for PBXNativeTarget "Musindex" */;
+			buildPhases = (
+				DD2D42491C44776000E27BBC /* Sources */,
+				DD2D424A1C44776000E27BBC /* Frameworks */,
+				DD2D424B1C44776000E27BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Musindex;
+			productName = Musindex;
+			productReference = DD2D424D1C44776000E27BBC /* Musindex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD2D42651C44776000E27BBC /* MusindexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2D427D1C44776000E27BBC /* Build configuration list for PBXNativeTarget "MusindexTests" */;
+			buildPhases = (
+				DD2D42621C44776000E27BBC /* Sources */,
+				DD2D42631C44776000E27BBC /* Frameworks */,
+				DD2D42641C44776000E27BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD2D42681C44776000E27BBC /* PBXTargetDependency */,
+			);
+			name = MusindexTests;
+			productName = MusindexTests;
+			productReference = DD2D42661C44776000E27BBC /* MusindexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD2D42701C44776000E27BBC /* MusindexUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2D42801C44776000E27BBC /* Build configuration list for PBXNativeTarget "MusindexUITests" */;
+			buildPhases = (
+				DD2D426D1C44776000E27BBC /* Sources */,
+				DD2D426E1C44776000E27BBC /* Frameworks */,
+				DD2D426F1C44776000E27BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD2D42731C44776000E27BBC /* PBXTargetDependency */,
+			);
+			name = MusindexUITests;
+			productName = MusindexUITests;
+			productReference = DD2D42711C44776000E27BBC /* MusindexUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD2D42451C44776000E27BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dsaliberti;
+				TargetAttributes = {
+					DD2D424C1C44776000E27BBC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DD2D42651C44776000E27BBC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DD2D424C1C44776000E27BBC;
+					};
+					DD2D42701C44776000E27BBC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DD2D424C1C44776000E27BBC;
+					};
+				};
+			};
+			buildConfigurationList = DD2D42481C44776000E27BBC /* Build configuration list for PBXProject "Musindex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD2D42441C44776000E27BBC;
+			productRefGroup = DD2D424E1C44776000E27BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD2D424C1C44776000E27BBC /* Musindex */,
+				DD2D42651C44776000E27BBC /* MusindexTests */,
+				DD2D42701C44776000E27BBC /* MusindexUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD2D424B1C44776000E27BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2D42601C44776000E27BBC /* LaunchScreen.storyboard in Resources */,
+				DD2D428A1C447A5600E27BBC /* appIcon60@2x.png in Resources */,
+				DD2D425D1C44776000E27BBC /* Assets.xcassets in Resources */,
+				DD2D425B1C44776000E27BBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2D42641C44776000E27BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2D426F1C44776000E27BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD2D42491C44776000E27BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2D42581C44776000E27BBC /* ViewController.m in Sources */,
+				DD2D42551C44776000E27BBC /* AppDelegate.m in Sources */,
+				DD2D42521C44776000E27BBC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2D42621C44776000E27BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2D426B1C44776000E27BBC /* MusindexTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2D426D1C44776000E27BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2D42761C44776000E27BBC /* MusindexUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD2D42681C44776000E27BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD2D424C1C44776000E27BBC /* Musindex */;
+			targetProxy = DD2D42671C44776000E27BBC /* PBXContainerItemProxy */;
+		};
+		DD2D42731C44776000E27BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD2D424C1C44776000E27BBC /* Musindex */;
+			targetProxy = DD2D42721C44776000E27BBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD2D42591C44776000E27BBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2D425A1C44776000E27BBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD2D425E1C44776000E27BBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2D425F1C44776000E27BBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD2D42781C44776000E27BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD2D42791C44776000E27BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD2D427B1C44776000E27BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Musindex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsaliberti.Musindex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD2D427C1C44776000E27BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Musindex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsaliberti.Musindex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD2D427E1C44776000E27BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MusindexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsaliberti.MusindexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musindex.app/Musindex";
+			};
+			name = Debug;
+		};
+		DD2D427F1C44776000E27BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MusindexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsaliberti.MusindexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musindex.app/Musindex";
+			};
+			name = Release;
+		};
+		DD2D42811C44776000E27BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MusindexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsaliberti.MusindexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Musindex;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DD2D42821C44776000E27BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MusindexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsaliberti.MusindexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Musindex;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD2D42481C44776000E27BBC /* Build configuration list for PBXProject "Musindex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2D42781C44776000E27BBC /* Debug */,
+				DD2D42791C44776000E27BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2D427A1C44776000E27BBC /* Build configuration list for PBXNativeTarget "Musindex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2D427B1C44776000E27BBC /* Debug */,
+				DD2D427C1C44776000E27BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD2D427D1C44776000E27BBC /* Build configuration list for PBXNativeTarget "MusindexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2D427E1C44776000E27BBC /* Debug */,
+				DD2D427F1C44776000E27BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD2D42801C44776000E27BBC /* Build configuration list for PBXNativeTarget "MusindexUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2D42811C44776000E27BBC /* Debug */,
+				DD2D42821C44776000E27BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD2D42451C44776000E27BBC /* Project object */;
+}

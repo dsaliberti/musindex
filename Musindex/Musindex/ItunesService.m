@@ -12,6 +12,9 @@
 
 @property (nonatomic, strong) NSString *baseUrlString;
 
+@property (nonatomic, copy) void (^onSuccessCallback)(NSArray <ItunesResultItem>*);
+
+
 @end
 
 @implementation ItunesService
@@ -25,16 +28,25 @@
 }
 
 -(void)getItunesResultsWithQuery:(NSString *)query
-              andSuccessCallback:(void(^)(NSDictionary *response))onSuccessCallback
+              andSuccessCallback:(void(^)(NSArray <ItunesResultItem> *response))onSuccessCallback
                         andError:(void(^)(NSError *errorResponse))onErrorCallback {
+    
+    self.onSuccessCallback = onSuccessCallback;
     
     NSString *urlString = [NSString stringWithFormat:@"%@%@", self.baseUrlString, query ];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
     
+    NSOperation *backgroundOperation = [[NSOperation alloc] init];
+    backgroundOperation.queuePriority = NSOperationQueuePriorityLow;
+    backgroundOperation.qualityOfService = NSOperationQualityOfServiceBackground;
+    
+    NSOperationQueue *operationQueue = [NSOperationQueue new];
+    [operationQueue addOperation:backgroundOperation];
+    
     NSURLSession *session =
     [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]
                                   delegate:nil
-                             delegateQueue:[NSOperationQueue mainQueue]];
+                             delegateQueue:operationQueue];
     
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request
                                             completionHandler:^(NSData * _Nullable data,
@@ -46,9 +58,8 @@
                                                     [NSJSONSerialization JSONObjectWithData:data
                                                                                     options:kNilOptions
                                                                                       error:&jsonError];
-                                                    NSLog(@"Response: %@", responseDictionary);
                                                     
-                                                    onSuccessCallback( responseDictionary );
+                                                    [self performSelectorInBackground:@selector(parseItunesResultWithArrayOfDictionaries:) withObject:responseDictionary[@"results"]];
                                                     
                                                 } else {
                                                     NSLog(@"An error occurred: %@", error.description);
@@ -58,6 +69,19 @@
                                                 }
                                             }];
     [task resume];
+    
+}
+
+-(void)parseItunesResultWithArrayOfDictionaries:(NSArray*)dictionaryArray {
+    
+    NSMutableArray <ItunesResultItem> *result = (NSMutableArray <ItunesResultItem> *) @[].mutableCopy;
+    
+    [dictionaryArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        ItunesResultItem *item = [[ItunesResultItem alloc] initWithDictionary:obj];
+        [result addObject:item];
+    }];
+    
+    self.onSuccessCallback(result);
     
 }
 

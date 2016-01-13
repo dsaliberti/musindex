@@ -27,12 +27,12 @@
     NSString *queryString = [searchBar.text stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
     
     [self.service getItunesResultsWithQuery:queryString
-                         andSuccessCallback:^(NSDictionary *response) {
-                             NSLog(@":) ");
-                         }
+                         andSuccessCallback:^(NSArray<ItunesResultItem> *response) {
+                             NSLog(@"%@", [response valueForKey:@"artistName"] );
+    }
                                    andError:^(NSError *errorResponse) {
-                                       NSLog(@"error %@", errorResponse);
-                                   }];
+                                       NSLog(@"%@", errorResponse);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

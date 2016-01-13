@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ItunesResultItem.h"
 
 @interface ItunesService : NSObject
 
 -(void)getItunesResultsWithQuery:(NSString *)query
-              andSuccessCallback:(void(^)(NSDictionary *response))onSuccessCallback
+              andSuccessCallback:(void(^)(NSArray <ItunesResultItem> *response))onSuccessCallback
                         andError:(void(^)(NSError *errorResponse))onErrorCallback;
 
 @end

@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol ItunesResultItem
+@end
+
 @interface ItunesResultItem : NSObject
 
 @property (nonatomic, strong) NSString *wrapperType;
@@ -29,7 +32,7 @@
 @property (nonatomic, strong) NSString *artworkUrl100;
 @property (nonatomic, strong) NSString *collectionPrice;
 @property (nonatomic, strong) NSString *trackPrice;
-@property (nonatomic, strong) NSString *releaseDate;
+@property (nonatomic, strong) NSDate *releaseDate;
 @property (nonatomic, strong) NSString *collectionExplicitness;
 @property (nonatomic, strong) NSString *trackExplicitness;
 @property (nonatomic, strong) NSNumber *discCount;
@@ -42,5 +45,7 @@
 @property (nonatomic, strong) NSString *primaryGenreName;
 @property (nonatomic, strong) NSString *radioStationUrl;
 @property (nonatomic, assign) BOOL isStreamable;
+
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 
 @end

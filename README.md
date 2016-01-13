@@ -20,3 +20,9 @@ Pure Objective-C with no libraries;
 Quering and parsing in background thread;
 Scrolls up after a second successful request;
 
+## would be great
+
+UnitTests
+- model: should test the parsing process of the required data;
+- viewModel: should test, inputing a mocked-model, expecting the ready-to-use data;
+- viewController: should test if the given mocked-model is being displayed as expected;

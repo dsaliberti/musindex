@@ -14,6 +14,7 @@
     if (self = [super init]) {
         self.wrapperType =  dictionary[@"wrapperType"];
         self.artistName =   dictionary[@"artistName"];
+        self.trackName =    dictionary[@"trackName"];
     }
     return self;
 }

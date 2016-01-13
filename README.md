@@ -13,11 +13,14 @@ An iOS app to search Itunes music.
 
 ✅ search item detail with formatted informations and image;
 
-## details
+## good to say
 
-Universal app - use of autolayout;
+Universal app - use of autolayout promotes the support form iPhone 4s until iPad Pro;
+
 Pure Objective-C with no libraries;
+
 Quering and parsing in background thread;
+
 Scrolls up after a second successful request;
 
 ## would be great

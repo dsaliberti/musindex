@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DD2D42521C44776000E27BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42511C44776000E27BBC /* main.m */; };
 		DD2D42551C44776000E27BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42541C44776000E27BBC /* AppDelegate.m */; };
-		DD2D42581C44776000E27BBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42571C44776000E27BBC /* ViewController.m */; };
 		DD2D425B1C44776000E27BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2D42591C44776000E27BBC /* Main.storyboard */; };
 		DD2D425D1C44776000E27BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D425C1C44776000E27BBC /* Assets.xcassets */; };
 		DD2D42601C44776000E27BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2D425E1C44776000E27BBC /* LaunchScreen.storyboard */; };
@@ -19,6 +18,8 @@
 		DD2D428D1C447B0800E27BBC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D428C1C447B0800E27BBC /* SearchViewController.m */; };
 		DD2D42931C447FB400E27BBC /* ItunesService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42921C447FB400E27BBC /* ItunesService.m */; };
 		DD2D42961C45130600E27BBC /* ItunesResultItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D42951C45130600E27BBC /* ItunesResultItem.m */; };
+		DD2D42981C45F48F00E27BBC /* placeholder60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2D42971C45F48F00E27BBC /* placeholder60@2x.png */; };
+		DD2D429B1C45F90A00E27BBC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D429A1C45F90A00E27BBC /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +44,6 @@
 		DD2D42511C44776000E27BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD2D42531C44776000E27BBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD2D42541C44776000E27BBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD2D42561C44776000E27BBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD2D42571C44776000E27BBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD2D425A1C44776000E27BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD2D425C1C44776000E27BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2D425F1C44776000E27BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +61,9 @@
 		DD2D42921C447FB400E27BBC /* ItunesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesService.m; sourceTree = "<group>"; };
 		DD2D42941C45130600E27BBC /* ItunesResultItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItunesResultItem.h; sourceTree = "<group>"; };
 		DD2D42951C45130600E27BBC /* ItunesResultItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesResultItem.m; sourceTree = "<group>"; };
+		DD2D42971C45F48F00E27BBC /* placeholder60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder60@2x.png"; sourceTree = "<group>"; };
+		DD2D42991C45F90A00E27BBC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DD2D429A1C45F90A00E27BBC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				DD2D42891C447A5600E27BBC /* appIcon60@2x.png */,
+				DD2D42971C45F48F00E27BBC /* placeholder60@2x.png */,
 				DD2D42591C44776000E27BBC /* Main.storyboard */,
 				DD2D425E1C44776000E27BBC /* LaunchScreen.storyboard */,
 				DD2D425C1C44776000E27BBC /* Assets.xcassets */,
@@ -172,10 +175,10 @@
 		DD2D428E1C447B2C00E27BBC /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				DD2D42561C44776000E27BBC /* ViewController.h */,
-				DD2D42571C44776000E27BBC /* ViewController.m */,
 				DD2D428B1C447B0800E27BBC /* SearchViewController.h */,
 				DD2D428C1C447B0800E27BBC /* SearchViewController.m */,
+				DD2D42991C45F90A00E27BBC /* DetailViewController.h */,
+				DD2D429A1C45F90A00E27BBC /* DetailViewController.m */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				DD2D42601C44776000E27BBC /* LaunchScreen.storyboard in Resources */,
 				DD2D428A1C447A5600E27BBC /* appIcon60@2x.png in Resources */,
+				DD2D42981C45F48F00E27BBC /* placeholder60@2x.png in Resources */,
 				DD2D425D1C44776000E27BBC /* Assets.xcassets in Resources */,
 				DD2D425B1C44776000E27BBC /* Main.storyboard in Resources */,
 			);
@@ -329,12 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2D42581C44776000E27BBC /* ViewController.m in Sources */,
 				DD2D42551C44776000E27BBC /* AppDelegate.m in Sources */,
 				DD2D428D1C447B0800E27BBC /* SearchViewController.m in Sources */,
 				DD2D42521C44776000E27BBC /* main.m in Sources */,
 				DD2D42931C447FB400E27BBC /* ItunesService.m in Sources */,
 				DD2D42961C45130600E27BBC /* ItunesResultItem.m in Sources */,
+				DD2D429B1C45F90A00E27BBC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,4 +15,7 @@
               andSuccessCallback:(void(^)(NSArray <ItunesResultItem> *response))onSuccessCallback
                         andError:(void(^)(NSError *errorResponse))onErrorCallback;
 
+-(void)loadAsyncImageDataWithURL:(NSURL *)imageURL
+              andSuccessCallback:(void(^)(NSData *imageData))onSuccessCallback;
+
 @end

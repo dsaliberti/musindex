@@ -8,7 +8,7 @@
 
 #import "SearchViewController.h"
 #import "ItunesService.h"
-
+#import "DetailViewController.h"
 @interface SearchViewController ()
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) ItunesService *service;
@@ -49,6 +49,7 @@
                              
                              dispatch_async(dispatch_get_main_queue(), ^{
                                  [self.tableView reloadData];
+                                 [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
                                  [self.view endEditing:YES];
                              });
     }
@@ -82,12 +83,24 @@
     
     cell.textLabel.text = item.artistName;
     cell.detailTextLabel.text = item.trackName;
+    cell.imageView.image = [UIImage imageNamed:@"placeholder60"];
+    [self.service loadAsyncImageDataWithURL:item.artworkUrl60
+                         andSuccessCallback:^(NSData *imageData) {
+                             //TODO: save image data to cache
+                             dispatch_async(dispatch_get_main_queue(), ^{
+                                 cell.imageView.image = [UIImage imageWithData:imageData];
+                             });
+                         }];
+                       
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    DetailViewController *detailViewController = (DetailViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    detailViewController.item = [self.searchResults objectAtIndex:indexPath.row];
+    //TODO: would be better to use a viewModel instead of the model itself directly in the viewController
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 

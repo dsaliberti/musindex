@@ -85,4 +85,16 @@
     
 }
 
+-(void)loadAsyncImageDataWithURL:(NSURL *)imageURL
+              andSuccessCallback:(void(^)(NSData *imageData))onSuccessCallback {
+    
+    NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithURL:imageURL completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError * _Nullable error) {
+        if (data) {
+            onSuccessCallback(data);
+        }
+    }];
+    
+    [task resume];
+}
+
 @end

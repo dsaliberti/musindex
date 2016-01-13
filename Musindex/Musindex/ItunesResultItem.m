@@ -7,14 +7,29 @@
 //
 
 #import "ItunesResultItem.h"
+#import <UIKit/UIKit.h>
 
 @implementation ItunesResultItem
 
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary {
     if (self = [super init]) {
-        self.wrapperType =  dictionary[@"wrapperType"];
-        self.artistName =   dictionary[@"artistName"];
-        self.trackName =    dictionary[@"trackName"];
+        self.wrapperType = dictionary[@"wrapperType"];
+        self.artistName = dictionary[@"artistName"];
+        self.trackName = dictionary[@"trackName"];
+        self.artworkUrl60 = [NSURL URLWithString:dictionary[@"artworkUrl60"]];
+        self.artworkUrl100 = [NSURL URLWithString:dictionary[@"artworkUrl100"]];
+        self.collectionName = dictionary[@"collectionName"];
+        
+        self.currency = dictionary[@"currency"];
+        NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+        numberFormatter.numberStyle = kCFNumberFormatterCurrencyStyle;
+        numberFormatter.currencyCode = self.currency;
+        
+        self.collectionPrice = [numberFormatter stringFromNumber:[NSNumber numberWithDouble:[dictionary[@"collectionPrice"] doubleValue]]];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+        self.releaseDate = [dateFormatter dateFromString:dictionary[@"releaseDate"]];
     }
     return self;
 }

@@ -27,9 +27,9 @@
 @property (nonatomic, strong) NSString *collectionViewUrl;
 @property (nonatomic, strong) NSString *trackViewUrl;
 @property (nonatomic, strong) NSString *previewUrl;
-@property (nonatomic, strong) NSString *artworkUrl30;
-@property (nonatomic, strong) NSString *artworkUrl60;
-@property (nonatomic, strong) NSString *artworkUrl100;
+@property (nonatomic, strong) NSURL *artworkUrl30;
+@property (nonatomic, strong) NSURL *artworkUrl60;
+@property (nonatomic, strong) NSURL *artworkUrl100;
 @property (nonatomic, strong) NSString *collectionPrice;
 @property (nonatomic, strong) NSString *trackPrice;
 @property (nonatomic, strong) NSDate *releaseDate;
